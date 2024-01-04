@@ -6,7 +6,7 @@ export default class Car {
   }
 
   cloneCar() {
-    if (this.constructor.name === 'AllCar') return new Car(this._brand, this._motor, this._color);
+    if (this.constructor.name === 'EVCar') return new Car(this._brand, this._motor, this._color);
     return new this.constructor(this._brand, this._motor, this._color);
   }
 }
